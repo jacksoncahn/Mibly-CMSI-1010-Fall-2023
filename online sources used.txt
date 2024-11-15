@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=hDu8mcAlY4E (Pygame Tutorial: An introduction to sprites)
+https://www.youtube.com/watch?v=MYaxPa_eZS0&t=35s (Sprite animation tutorial)
+
+Libraries:
+  pygame
+  random
+  *'button' is imported from another file

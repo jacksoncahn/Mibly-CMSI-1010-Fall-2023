@@ -1,0 +1,73 @@
+                                        Project Plan
+Our original Project plan was to make a game like Space Invaders where you can move a ship around and hit enemy ships as they get 
+closer to you and shoot back at you. We wanted to add a  way to keep track of a high score, and it would display a different ending screen 
+when you beat your high score. We also wanted to add a signup and log-in system so you could keep track of your High score. We wanted to
+add multiple levels and menus so that the game could work how you wanted it to.
+
+Here is the PowerPoint we used to present:
+https://docs.google.com/presentation/d/1bp1Ia5jbvrgi5HVxjYEnLEgATTNaaAfQbn6v11wglwM/edit?usp=sharing
+
+                                        How it changed
+However, the game did change as it doesn’t have a login system and different levels. This is because we didn’t have enough time to learn 
+how to make the data structure needed to store the data. So, we just let the player play without needing to log in. Instead of adding 
+multiple levels, we decided it would be more fun if the game got more challenging as you played. To do this, we implemented a way that if 
+the player reaches a specific score, the speed of the enemy bullets and the frequency would increase. This was incremental and would happen 
+every time the person reached that score. We also had to take out some menus because when making a loop for each screen, it ended up causing 
+loops to stack up on top of each other, making it unplayable. So we decided to take out a part of the menu and were able to fix the game so 
+that the score and sprites would reset after restarting the game. Finally, we had an options menu for changing the sound, frame rate, etc. 
+but was removed because we felt it was unnecessary.
+
+                                        What we added
+We added background music and sound effects when you kill enemy ships, making the game a little more enjoyable.
+
+                                        What we  each individually did
+
+Colin - I worked on the player ship and player beam, as well as the code within the game that allows it to die. I coded part of the enemy laser and allowed it
+to collide with the player ship to die. I also worked on all of the audio and functions relating to audio within the game. I helped debug the different screens,
+and issues with the game over screen. I added the splash screen on the main menu, the background of the game over screen, and coded the game states to be triggered using 
+variables. Finally, I adjusted the play function to freeze the game objects when clicked.
+
+Jackson- I created an explosion animation class, and code within the main game function for it to run when an enemy ship was killed. I also created an
+enemy ship class; the enemies move at a constant speed throughout the game, and change direction every second, per an event timer I created. I also created
+a method within the class to check if the enemy had collided with another game object. I helped code the enemy's laser, as well as helping debug the main game,
+and issues switching between different screens. 
+
+Laith - I helped throughout the project, but my main job was making the menus and screens navigated throughout the game. 
+I also focused on adding the designs to the ships and giving ideas on how to make the game run differently. 
+Specific codes are the button class, title screen, game over screen, and images.
+
+
+                                        Libraries used
+Pygame
+Random
+And code for a ‘button’ that is imported from another file
+
+
+
+                                        Laith's Group Assessment:
+
+My group did a great job at working together. Colin and Jackson were great at communicating and getting stuff done during the time 
+allotted and listened to my ideas and what I had to say. They provided good insights into how the game should run and significantly 
+contributed to the code. Although I didn’t make as significant contributions to the code, I was still working with them almost all the time. 
+I was also the one who focused on presenting the project with PowerPoint and posters. I would give everyone in this group an A because we tried 
+hard and spent much time on the project.
+
+                                        Jackson's Group Assessment:
+
+Not only did my group work well together, but we each ended up doing a roughly equal amount of work on the project, which doesn't always happen. We also 
+did a great job of keeping to the project schedule because we were always communicating our issues and checking up on each other's individual progress, as
+well as the project's progress as a whole. We also each put in enough work on the project to actually become better at using not only Python, but Pygame- 
+by learning new built-in methods, and refining our coding technique when it came to logic. I personally didn't start the project with a rock solid grasp on 
+recursive logic, nor could I comfortably work with loops, but now I feel a lot more confident with Python and programming in general. I would give myself 
+an A, as I put a lot of work into the project, and grew my programming skills. I would also give both Colin and Laith As because they put a lot of 
+time and effort into the entire process of creating, debugging, and polishing our game.
+
+                                        Colin's Group Assessment
+
+My group worked very well together and was able to share the workload with one another. If one of us was faced with a problem that we tried to fix but couldn't,
+we would ask the others to try and solve it. We were in constant communication with the changes that we made and any suggestions we had for the game.
+I believe that we became quite proficient in both Python and Pygame as a result of this project, as we experimented with classes, variables, objects, methods, and 
+functions. I was mainly sure about Python, but Pygame was mostly new to me. Luckily, having experience with game development and design made this transition
+much easier. I would give myself an A for this assignment because I put a great amount of work into our project, and had improvements along the way. I would give 
+everyone else an A as well since we all spent a lot of time and energy into creating and crafting our game. Everyone wanted to achieve success, and none of us were 
+lazy or slow.

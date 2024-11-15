@@ -1,4 +1,4 @@
-# Welcome to Mibly!
+# Welcome to !
 import pygame, sys
 from button import Button
 import pygame.rect as rect
@@ -16,7 +16,7 @@ SCREEN = pygame.display.set_mode((1000,662))
 
 # Sets window title and icon.
 pygame.display.set_caption("Mibly")
-pygame.display.set_icon(pygame.image.load("Mibly/assets/Pictures/ship.png"))
+pygame.display.set_icon(pygame.image.load("assets/Pictures/ship.png"))
 
 # Sets a timer that is used to change the direction of the ships.
 pygame.time.set_timer(CHANGE_DIRECTION, 2500)
@@ -34,16 +34,16 @@ playGame = True
 
 screen_rect = SCREEN.get_rect()
 
-scoreFont = pygame.font.Font("Mibly/assets/font.ttf", 28)
+scoreFont = pygame.font.Font("assets/font.ttf", 28)
 scoreText = scoreFont
 
 def loadImg(imgname):
     return pygame.image.load(imgname).convert_alpha()
 
 # Backgrounds of each menu and screen.
-BG = loadImg("Mibly/assets/Pictures/Title screen.png")
-PBG = loadImg("Mibly/assets/Pictures/PAUSE_GAME.png")
-GOBG = loadImg("Mibly/assets/Pictures/GameoverBg.png")
+BG = loadImg("assets/Pictures/Title screen.png")
+PBG = loadImg("assets/Pictures/PAUSE_GAME.png")
+GOBG = loadImg("assets/Pictures/GameoverBg.png")
 
 # Gets the height and width of the screen used later for ships and boundaries.
 HEIGHT = SCREEN.get_height()
@@ -57,8 +57,8 @@ text_size = 50
 text = font.Font(None, text_size)
 
 # Audio variables for sound effects.
-laserSound = pygame.mixer.Sound("Mibly/assets/Sounds/laser.wav")
-enemyDeath = pygame.mixer.Sound("Mibly/assets/Sounds/enemyDeath.wav")
+laserSound = pygame.mixer.Sound("assets/Sounds/laser.wav")
+enemyDeath = pygame.mixer.Sound("assets/Sounds/enemyDeath.wav")
 
 # Separates the background and music sound effects.
 background_music_channel = pygame.mixer.Channel(0)
@@ -159,30 +159,30 @@ class Explosion(pygame.sprite.Sprite):
         self.x = x
         self.y = y
         self.explosion = []
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame1.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame1.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame2.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame2.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame3.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame3.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame4.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame4.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame5.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame5.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame6.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame6.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame7.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame7.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame8.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame8.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame9.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame9.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame10.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame10.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame11.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame11.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame12.png"))
-        self.explosion.append(pygame.image.load("Mibly/assets/Explosion/explosion_frame12.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame1.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame1.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame2.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame2.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame3.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame3.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame4.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame4.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame5.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame5.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame6.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame6.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame7.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame7.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame8.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame8.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame9.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame9.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame10.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame10.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame11.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame11.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame12.png"))
+        self.explosion.append(pygame.image.load("assets/Explosion/explosion_frame12.png"))
 
         self.frame = 0
         self.image = self.explosion[self.frame]
@@ -233,7 +233,7 @@ class Player_Ship(pygame.sprite.Sprite):
 class Player_Beam(pygame.sprite.Sprite):
     def __init__(self, player_ship, x, y):
         super().__init__()
-        self.image = loadImg("Mibly/assets/Pictures/laser.png")
+        self.image = loadImg("assets/Pictures/laser.png")
         self.image = pygame.transform.scale(self.image, (15, 40))
         self.rect = self.image.get_rect()
         self.rect.x = x
@@ -283,7 +283,7 @@ explosion_sprite_group = pygame.sprite.Group()
 # Defines the function startup that gives each variable a global variable that will add every sprite onto the screen.
 def startup():
     global player_ship
-    player_ship = Player_Ship("Mibly/assets/Pictures/ship.png", 470, 640)
+    player_ship = Player_Ship("assets/Pictures/ship.png", 470, 640)
     global playerBeam
     playerBeam = Player_Beam(player_ship, 570, 660)
     global player_beam_group
@@ -297,22 +297,22 @@ def startup():
 
     if group_count(enemy_sprite_group) <= 20:
         for _ in range(20):
-            enemy_sprite_group.add(Enemy_Ship("Mibly/assets/Pictures/EnemyShip.png", random.randrange(1000), random.randrange(400)))
+            enemy_sprite_group.add(Enemy_Ship("assets/Pictures/EnemyShip.png", random.randrange(1000), random.randrange(400)))
 
     global last_enemy_shot_time
     last_enemy_shot_time = pygame.time.get_ticks()
 
 def get_font(size):
-    return pygame.font.Font("Mibly/assets/font.ttf", size)
+    return pygame.font.Font("assets/font.ttf", size)
 
 # Loads background music.
-pygame.mixer.music.load('Mibly/assets/Sounds/bgMusic.wav')
+pygame.mixer.music.load('assets/Sounds/bgMusic.wav')
 
 # Function that plays the background music when called as true, paused while false.
 def backgroundMusicPlay(play=False):
     if play:
         pygame.mixer.music.unpause()
-        pygame.mixer.music.load('Mibly/assets/Sounds/bgMusic.wav')
+        pygame.mixer.music.load('assets/Sounds/bgMusic.wav')
         pygame.mixer.music.play(-1)
     else:
         pygame.mixer.music.pause()
@@ -320,7 +320,7 @@ def backgroundMusicPlay(play=False):
 # Function that plays the menu music when called as true, paused while false.
 def menuMusicPlay(play=False):
     if play:
-        pygame.mixer.music.load('Mibly/assets/Sounds/menuMusic.wav')
+        pygame.mixer.music.load('assets/Sounds/menuMusic.wav')
         pygame.mixer.music.play(-1)
     else:
         pygame.mixer.music.pause()
@@ -328,7 +328,7 @@ def menuMusicPlay(play=False):
 # Function that plays the game over music when called.
 def gameOverMusicPlay(play=False):
     if play:
-        pygame.mixer.music.load('Mibly/assets/Sounds/gameOver.wav')
+        pygame.mixer.music.load('assets/Sounds/gameOver.wav')
         pygame.mixer.music.set_volume(3)
         pygame.mixer.music.play()
 
@@ -370,10 +370,10 @@ def play():
                 if event.type == ENEMY_FIRE:
                     if group_count(enemy_sprite_group) <= 20:
                         enemy_sprite_group.add(
-                            Enemy_Ship("Mibly/assets/Pictures/EnemyShip.png", random.randrange(1000),
+                            Enemy_Ship("assets/Pictures/EnemyShip.png", random.randrange(1000),
                                        random.randrange(200)))
                     random_enemy = choice(list(enemy_sprite_group))
-                    new_enemy_beam = Enemy_Beam("Mibly/assets/Pictures/enemyLaser.png", random_enemy.x, random_enemy.y,
+                    new_enemy_beam = Enemy_Beam("assets/Pictures/enemyLaser.png", random_enemy.x, random_enemy.y,
                                                 random_enemy.rect.x, random_enemy.rect.y)
                     new_enemy_beam.speed += 0.6 * (playerBeam.score // 10)
                     new_enemy_beam.fired = True
@@ -417,7 +417,7 @@ def play():
 
                 GAME_MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-                MENU_BUTTON = Button(image=pygame.image.load("Mibly/assets/Pictures/PauseMenu.png"), pos=(960, 45),
+                MENU_BUTTON = Button(image=pygame.image.load("assets/Pictures/PauseMenu.png"), pos=(960, 45),
                                     text_input="", font=get_font(23),
                                     base_color="White", hovering_color="White")
 
@@ -491,7 +491,7 @@ def main_menu():
         MENU_TEXT = get_font(80).render("MIBLY!!!", True, "#33c3cc")
         MENU_RECT = MENU_TEXT.get_rect(center=(520, 100))
         
-        MENU_SPLASH = pygame.image.load("Mibly/assets/Pictures/MainMenuSplash.png").convert_alpha()
+        MENU_SPLASH = pygame.image.load("assets/Pictures/MainMenuSplash.png").convert_alpha()
         SPLASH_POS = (342, 135)
         SCREEN.blit(MENU_SPLASH, SPLASH_POS)
         
@@ -645,7 +645,7 @@ def game_over_menu():
             GOVER_TRAGAIN.changeColor(GOVER_MOUSE_POS)
             GOVER_TRAGAIN.update(SCREEN)
             
-            scoreFont = pygame.font.Font("Mibly/assets/font.ttf", 40)
+            scoreFont = pygame.font.Font("assets/font.ttf", 40)
             scoreText = scoreFont
             score_text = scoreText.render("Score:" + str(playerBeam.score), True, "white")
             textRect = score_text.get_rect()
